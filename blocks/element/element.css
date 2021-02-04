@@ -1,0 +1,13 @@
+.element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  background-color: #FFFFFF;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
