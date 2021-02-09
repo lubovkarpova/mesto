@@ -1,8 +1,8 @@
-.profile__name{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: baseline;
-    align-items: center;
-    gap:25px;
+.profile__name {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: baseline;
+  align-items: center;
+  gap: 25px;
 }

@@ -30,8 +30,3 @@ editForm.addEventListener("submit", function (e) {
   popup.classList.remove("popup_opened");
 });
 
-popup.addEventListener("click", function (event) {
-  if (event.target.className === "popup_opened") {
-    popup.classList.remove("popup_opened");
-  }
-});

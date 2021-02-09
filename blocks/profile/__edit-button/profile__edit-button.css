@@ -9,6 +9,7 @@
   opacity: 1;
   transition: opacity 1s ease;
   transition: color 1s ease;
+  margin-top: 10px;
 }
 
 .profile__edit-button:hover {
