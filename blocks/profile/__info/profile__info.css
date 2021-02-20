@@ -3,7 +3,16 @@
   flex-direction: column;
   justify-content: start;
   gap: 16px;
+  margin-left: 30px;
 }
+
+@media (max-width: 800px) {
+  .profile__info {
+    margin-left: 10px;
+  }
+}
+
+
 
 @media (max-width: 680px) {
   .profile__info {

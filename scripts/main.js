@@ -4,29 +4,31 @@ let closeButton = document.querySelector(".popup__close"); //переменна�
 let editForm = document.querySelector(".popup__form"); //переменная для формы//
 let textName = document.querySelector(".profile__title"); //переменные куда вставляем текст
 let textJob = document.querySelector(".profile__subtitle"); //переменные куда вставляем текст
-let nameInput = popup.querySelector(".popup__input_name"); //переменные для инпутов в форме//
-let jobInput = popup.querySelector(".popup__input_job"); //переменные для инпутов в форме//
+let nameInput = popup.querySelector(".input_name"); //переменные для инпутов в форме//
+let jobInput = popup.querySelector(".input_job"); //переменные для инпутов в форме//
 
-//открываем и закрываем попап//
-editButton.addEventListener("click", function () {
+//открытие попапа//
+function editFormOpen () {
   popup.classList.add("popup_opened");
-  let initialNameTextContent = textName.textContent;
-  let initialTextContent = textJob.textContent;
-  nameInput.value = initialNameTextContent;
-  jobInput.value = initialTextContent;
-});
+  nameInput.value = textName.textContent;
+  jobInput.value = textJob.textContent;
+};
 
-closeButton.addEventListener("click", function () {
+//закрытие попап//
+function editFormClose() {
   popup.classList.remove("popup_opened");
-});
+};
 
-//забираем текст из инпутов и вставляем его в профиль//
-editForm.addEventListener("submit", function (e) {
+
+//забор текста из инпутов и вставка его в профиль//
+function submitForm (e) {
   e.preventDefault();
-  let nameValue = nameInput.value;
-  let jobValue = jobInput.value;
-  textName.textContent = nameValue;
-  textJob.textContent = jobValue;
-  popup.classList.remove("popup_opened");
-});
+  textName.textContent = nameInput.value;
+  textJob.textContent = jobInput.value;
+  editFormClose();
+};
+
+editButton.addEventListener("click", editFormOpen); //клик по кнопке edit и открытие попапа//
+closeButton.addEventListener("click", editFormClose); //клик по кнопке close и закрытие попапа//
+editForm.addEventListener("submit", submitForm); //сабмит формы и изменение текста в профиле//
 
