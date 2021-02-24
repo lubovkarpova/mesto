@@ -4,8 +4,8 @@ let closeButton = document.querySelector(".popup__close"); //переменна�
 let editForm = document.querySelector(".popup__form"); //переменная для формы//
 let textName = document.querySelector(".profile__title"); //переменные куда вставляем текст
 let textJob = document.querySelector(".profile__subtitle"); //переменные куда вставляем текст
-let nameInput = popup.querySelector(".input_name"); //переменные для инпутов в форме//
-let jobInput = popup.querySelector(".input_job"); //переменные для инпутов в форме//
+let nameInput = popup.querySelector(".popup__input_type_name"); //переменные для инпутов в форме//
+let jobInput = popup.querySelector(".popup__input_type_job"); //переменные для инпутов в форме//
 
 //открытие попапа//
 function editFormOpen () {
