@@ -10,6 +10,7 @@
   opacity: 1;
   transform: opacity 2s ease;
   align-self: center;
+  margin-top: 20px;
 }
 
 .popup__save:hover {
